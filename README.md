@@ -44,18 +44,28 @@
 Модель сохраняется в outputs/имя_модели/
 
 ### Запуск тестов:
->>pip install -r requirements.txt
->>export PYTHONPATH=$(pwd) #это нужно для корректной обработки модулей
->>pytest -q tests
+
+\>\>pip install -r requirements.txt
+
+\>\>export PYTHONPATH=$(pwd) #это нужно для корректной обработки модулей
+
+\>\>pytest -q tests
 
 Если все корректно, должно вывести:
->> ......
->> 6 passed in 22.29s
+
+\>\> ......
+
+\>\> 6 passed in 22.29s
 
 ### Запуск инференса:
->>python
->>from src.predict import load_for_inference, predict_text
->>model, tok = load_for_inference("outputs/bert_tiny")
->>predict_text(model, tok, "There is a fire in the building", threshold=0.5)
+
+\>\>python
+
+\>\>from src.predict import load_for_inference, predict_text
+
+\>\>model, tok = load_for_inference("outputs/bert_tiny")
+
+\>\>predict_text(model, tok, "There is a fire in the building", threshold=0.5)
+
 Должно вывести предсказаный класс
 
