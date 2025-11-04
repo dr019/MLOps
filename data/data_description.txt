@@ -1,0 +1,1 @@
+В качестве датасета используем данные из контеста Natural Language Processing with Disaster Tweets yf Kaggle 
